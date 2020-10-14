@@ -1,4 +1,5 @@
 var inquirer = require("inquirer");
+var fs = require("fs");
 
 // checklist of possible sections?
 // Title
@@ -12,7 +13,7 @@ var inquirer = require("inquirer");
 // License
 
 // array of questions for user
-const questions = [
+inquirer.prompt([
   { 
     type: "",
     message: "What is your project's title?",
@@ -30,7 +31,7 @@ const questions = [
    },
    {
      type: "",
-     message: "WHat is your project's intended usage?",
+     message: "What is your project's intended usage?",
      name: "usage"
    },
    {
@@ -54,10 +55,22 @@ const questions = [
      name: "license"
    }
 
-];
+]);
 
 // function to write README file
 function writeToFile(fileName, data) {
+  // appendFile
+  /* fs.appendFile("log.txt", process.argv[2] + '\n', function(err) {
+
+    if (err) {
+      console.log(err);
+    }
+    else {
+      console.log("Commit logged!");
+    }
+  
+  }); */
+  
 }
 
 // function to initialize program
