@@ -9,11 +9,17 @@ var fs = require("fs");
 // Usage
 // Technologies used
 // Problems faced
-// Contributors
+// Credits
 // License
 
 // array of questions for user
 inquirer.prompt([
+  {
+    type: "checkbox",
+    message: "Which sections do you need?",
+    name: "sections",
+    choices: ["Title", "Description", "Installation", "Usage", "Technologies Used", "Problems Faced", "Credits", "License"]
+  },
   { 
     type: "",
     message: "What is your project's title?",
@@ -47,22 +53,20 @@ inquirer.prompt([
    {
     type: "",
     message: "Who contributed to this project?",
-    name: "contributors"
-   },
+    name: "credits"
+  },
    {
-     type: "",
+     type: "checklist",
      message: "How is this project licensed?",
-     name: "license"
+     name: "license",
+     choices: ["MIT License", "ISC License", "Creative Commons", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "Boost Software License 1.0", "The Unlicense", "Other"]
    }
 
 ]);
 
 // function to write README file
-function writeToFile(fileName, data) {
-  // appendFile
-  /* fs.appendFile("log.txt", process.argv[2] + '\n', function(err) {
-
-    if (err) {
+fs.writeFile("README.md", data);
+  /* if (err) {
       console.log(err);
     }
     else {
@@ -70,8 +74,8 @@ function writeToFile(fileName, data) {
     }
   
   }); */
+  // switch case for sections?
   
-}
 
 // function to initialize program
 function init() {
