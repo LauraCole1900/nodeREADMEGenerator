@@ -1,5 +1,7 @@
-var inquirer = require("inquirer");
-var fs = require("fs");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMarkdown = require("./Develop/utils/generateMarkdown");
+const path = require("path");
 
 // checklist of possible sections?
 // Title
@@ -10,63 +12,89 @@ var fs = require("fs");
 // Technologies used
 // Problems faced
 // Credits
+// Collaborators
 // License
 
 // array of questions for user
-inquirer.prompt([
-  {
-    type: "checkbox",
-    message: "Which sections do you need?",
-    name: "sections",
-    choices: ["Title", "Description", "Installation", "Usage", "Technologies Used", "Problems Faced", "Credits", "License"]
-  },
+const questions = [
+  // {
+  //   type: "checkbox",
+  //   message: "Which sections do you need?",
+  //   name: "sections",
+  //   choices: ["Title", "Description", "Installation", "Usage", "Technologies Used", "Problems Faced", "Credits", "Collaborators", "License"]
+  // },
   { 
-    type: "",
+    type: "input",
     message: "What is your project's title?",
     name: "title"
    },
    {
-     type: "",
+     type: "input",
      message: "What is your project's description?",
      name: "description"
    },
    {
-     type: "",
+     type: "input",
      message: "What are your project's installation instructions?",
-     name: "install"
+     name: "install",
+     default: "npm i"
    },
    {
-     type: "",
+     type: "input",
      message: "What is your project's intended usage?",
      name: "usage"
    },
    {
-     type: "",
+     type: "input",
      message: "What technologies did your project use?",
      name: "tech"
    },
    {
-     type: "",
+    type: "input",
+    message: "What commands should be run to run tests?",
+    name: "tests",
+    default: "npm run test"
+   },
+   {
+     type: "input",
      message: "What problems did you face?",
      name: "problems"
    },
    {
-    type: "",
-    message: "Who contributed to this project?",
+    type: "input",
+    message: "Who needs credit on this project?",
     name: "credits"
   },
+  {
+    type: "input",
+    message: "Who collaborated on this project?",
+    name: "collaborators"
+  },
+  {
+    type: "input",
+    message: "What is your email?",
+    name: "email"
+  },
+  {
+    type: "input",
+    message: "What is your GitHub username?",
+    name: "github"
+  },
    {
-     type: "checklist",
+     type: "list",
      message: "How is this project licensed?",
      name: "license",
      choices: ["MIT License", "ISC License", "Creative Commons", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "Boost Software License 1.0", "The Unlicense", "Other"]
    }
+]
 
-])
-.then()
+function writeToFile(filename, data) {
+  return fs.writeFileSync(path.join(process.cwd(), filename), data);
+}
+
 
 // function to write README file
-fs.writeFile("README.md", data);
+
   /* if (err) {
       console.log(err);
     }
@@ -80,7 +108,9 @@ fs.writeFile("README.md", data);
 
 // function to initialize program
 function init() {
-
+  inquirer.prompt(questions).then(response => {
+    writeToFile("sampleREADME.md", generateMarkdown(response))
+  });
 }
 
 // function call to initialize program
