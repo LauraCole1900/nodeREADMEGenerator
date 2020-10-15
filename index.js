@@ -3,26 +3,21 @@ const fs = require("fs");
 const generateMarkdown = require("./Develop/utils/generateMarkdown");
 const path = require("path");
 
-// checklist of possible sections?
 // Title
 // TOC
 // Description
 // Installation
 // Usage
 // Technologies used
+// Tests
 // Problems faced
 // Credits
 // Collaborators
+// Contact
 // License
 
 // array of questions for user
 const questions = [
-  // {
-  //   type: "checkbox",
-  //   message: "Which sections do you need?",
-  //   name: "sections",
-  //   choices: ["Title", "Description", "Installation", "Usage", "Technologies Used", "Problems Faced", "Credits", "Collaborators", "License"]
-  // },
   { 
     type: "input",
     message: "What is your project's title?",
@@ -88,23 +83,10 @@ const questions = [
    }
 ]
 
+// function to write README file
 function writeToFile(filename, data) {
   return fs.writeFileSync(path.join(process.cwd(), filename), data);
 }
-
-
-// function to write README file
-
-  /* if (err) {
-      console.log(err);
-    }
-    else {
-      console.log("Commit logged!");
-    }
-  
-  }); */
-  // switch case for sections?
-  
 
 // function to initialize program
 function init() {
