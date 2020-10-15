@@ -62,7 +62,8 @@ inquirer.prompt([
      choices: ["MIT License", "ISC License", "Creative Commons", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "Boost Software License 1.0", "The Unlicense", "Other"]
    }
 
-]);
+])
+.then()
 
 // function to write README file
 fs.writeFile("README.md", data);
