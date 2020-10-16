@@ -1,4 +1,4 @@
-# vnruiagbs
+# Good README Generator
 
   ## Table of Contents
 
@@ -16,19 +16,19 @@
 
   ## Description
 
-  vnafduipherfd
+  This is a README generator using Node.js. Users will be prompted to enter information about their project, which will then be entered into a template to generate a README file.
 
   ## Installation Instructions
 
-  vm ngbn xgpr
+  npm i
 
   ## Usage
 
-  vnauigohaerugb
+  This project is intended to be used to generate README.md files.
 
   ## Technologies used
 
-  nvau80rdfvsc
+  node.js
 
   ## Tests
 
@@ -36,20 +36,20 @@
 
   ## Problems Faced
 
-  cnawuegvobdc 
+  Learning node.js, primarily
 
   ## Credits
 
-  cnaueogbzerhidofbnas 
+  
 
   ## Collaborators
 
-  vnuidfb hioshu9egrad
+  n/a
 
   ## Contact me
 
-  If you have further questions, you can reach me at agvu8ar \. For more of my work, see [my GitHub](https://github.com/vnaufdobvohab).
+  If you have further questions, you can reach me at lauracole1900@comcast.net. For more of my work, see [my GitHub](https://github.com/LauraCole1900).
 
   ## License
 
-  ![License badge](https://img.shields.io/badge/license-MIT-brightgreen).
+  This project is licensed under MIT.
