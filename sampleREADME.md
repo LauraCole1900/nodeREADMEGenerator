@@ -1,4 +1,4 @@
-# Good README Generator
+# Good README generator
 
   ## Table of Contents
 
@@ -8,15 +8,14 @@
   * [Contributing](#contributing)
   * [Technologies Used](#technologies)
   * [Tests](#tests)
-  * [Problems Faced](#problems)
   * [Credits](#credits)
-  * [Collaborators](#collaborators)
-  * [Contact](#contact)
+  * [Contributing](#contributing)
+  * [Questions](#questions)
   * [License](#license)
 
   ## Description
 
-  This is a README generator using Node.js. Users will be prompted to enter information about their project, which will then be entered into a template to generate a README file.
+  This is a README generator using Node.js. The user enters through the command line and first drills down into the containing folder, then initializes the application by entering "node index.js". They are then taken through a series of prompts eliciting the important information about their project, which the generator then synthesizes into a README.md file.
 
   ## Installation Instructions
 
@@ -24,32 +23,28 @@
 
   ## Usage
 
-  This project is intended to be used to generate README.md files.
+  This project generates README.md files.
 
   ## Technologies used
 
-  node.js
+  Node.js
 
   ## Tests
 
   npm run test
 
-  ## Problems Faced
-
-  Learning node.js, primarily
-
   ## Credits
 
-  
+  N/A
 
-  ## Collaborators
+  ## Contributing
 
-  n/a
+  N/A
 
-  ## Contact me
+  ## Questions
 
   If you have further questions, you can reach me at lauracole1900@comcast.net. For more of my work, see [my GitHub](https://github.com/LauraCole1900).
 
   ## License
 
-  This project is licensed under MIT.
+  ![License badge](https://img.shields.io/badge/license-MIT-brightgreen).

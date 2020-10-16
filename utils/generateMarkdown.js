@@ -11,10 +11,9 @@ function generateMarkdown(data) {
   * [Contributing](#contributing)
   * [Technologies Used](#technologies)
   * [Tests](#tests)
-  * [Problems Faced](#problems)
   * [Credits](#credits)
-  * [Collaborators](#collaborators)
-  * [Contact](#contact)
+  * [Contributing](#contributing)
+  * [Questions](#questions)
   * [License](#license)
 
   ## Description
@@ -37,19 +36,15 @@ function generateMarkdown(data) {
 
   ${data.tests}
 
-  ## Problems Faced
-
-  ${data.problems}
-
   ## Credits
 
   ${data.credits}
 
-  ## Collaborators
+  ## Contributing
 
-  ${data.collaborators}
+  ${data.contributors}
 
-  ## Contact me
+  ## Questions
 
   If you have further questions, you can reach me at ${data.email}. For more of my work, see [my GitHub](https://github.com/${data.github}).
 

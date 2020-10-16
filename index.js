@@ -51,19 +51,14 @@ const questions = [
     default: "npm run test"
    },
    {
-     type: "input",
-     message: "What problems did you face?",
-     name: "problems"
-   },
-   {
     type: "input",
     message: "Who needs credit on this project?",
     name: "credits"
   },
   {
     type: "input",
-    message: "Who collaborated on this project?",
-    name: "collaborators"
+    message: "Who contributed to this project?",
+    name: "contributors"
   },
   {
     type: "input",
@@ -91,7 +86,7 @@ function writeToFile(filename, data) {
 // function to initialize program
 function init() {
   inquirer.prompt(questions).then(response => {
-    writeToFile("README.md", generateMarkdown(response))
+    writeToFile("sampleREADME.md", generateMarkdown(response))
   });
 }
 
