@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./Develop/utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 const path = require("path");
 
 // Title
@@ -79,7 +79,7 @@ const questions = [
      type: "list",
      message: "How is this project licensed?",
      name: "license",
-     choices: ["MIT License", "ISC License", "Creative Commons", "GNU GPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "Boost Software License 1.0", "The Unlicense", "Other"]
+     choices: ["Apache", "Boost Software", "Creative Commons", "GNU", "ISC", "MIT", "Mozilla Public", "The Unlicense", "Other"]
    }
 ]
 

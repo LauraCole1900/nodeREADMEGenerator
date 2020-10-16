@@ -9,9 +9,9 @@ function generateMarkdown(data) {
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
-  * [Technologies Used](#technologies used)
+  * [Technologies Used](#technologies)
   * [Tests](#tests)
-  * [Problems Faced](#problems faced)
+  * [Problems Faced](#problems)
   * [Credits](#credits)
   * [Collaborators](#collaborators)
   * [Contact](#contact)
@@ -51,11 +51,11 @@ function generateMarkdown(data) {
 
   ## Contact me
 
-  If you have further questions, you can reach me at ${email}. For more of my work, see [my GitHub](https://github.com/${github}).
+  If you have further questions, you can reach me at ${data.email}. For more of my work, see [my GitHub](https://github.com/${data.github}).
 
   ## License
 
-  This project is licensed under ${license}.
+  This project is licensed under ${data.license}.
 `;
 }
 
