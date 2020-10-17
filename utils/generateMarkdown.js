@@ -42,7 +42,7 @@ function generateMarkdown(data) {
 
   ## Contributing
 
-  ${data.contributors}
+  ${data.contribute}
 
   ## Questions
 

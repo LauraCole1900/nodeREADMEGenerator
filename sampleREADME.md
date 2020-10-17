@@ -1,4 +1,4 @@
-# Good README generator
+# Good README Generator
 
   ## Table of Contents
 
@@ -15,7 +15,7 @@
 
   ## Description
 
-  This is a README generator using Node.js. The user enters through the command line and first drills down into the containing folder, then initializes the application by entering "node index.js". They are then taken through a series of prompts eliciting the important information about their project, which the generator then synthesizes into a README.md file.
+  This is a README generator using Node.js. The user enters through the command line and, after drilling down into the containing folder, initializes the application by entering "node index.js". They are then taken through a series of prompts eliciting the necessary information about their project, which the generator then synthesizes into a README.md file.
 
   ## Installation Instructions
 
