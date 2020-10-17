@@ -18,7 +18,12 @@
   This is a README generator using Node.js. The user enters through the command line and first drills down into the containing folder, then enters "node index.js". They are then taken through a series of prompts eliciting the necessary information about their project, which the generator then synthesizes into a README.md file.
 
   Walkthrough video:
-  ![Walkthrough video](https://drive.google.com/file/d/1jXcjlIjijSWIJh8DP3Gx3CC52V9RL2UR/view)
+  
+  <figure class="video_container">
+  <iframe src="https://drive.google.com/file/d/1jXcjlIjijSWIJh8DP3Gx3CC52V9RL2UR/view" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+  [Link to walkthrough video](https://drive.google.com/file/d/1jXcjlIjijSWIJh8DP3Gx3CC52V9RL2UR/view)
 
   ## Installation Instructions
 
