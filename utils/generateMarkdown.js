@@ -8,7 +8,6 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
   * [Technologies Used](#technologies)
   * [Tests](#tests)
   * [Credits](#credits)
@@ -28,7 +27,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ## Technologies used
+  ## Technologies Used
 
   ${data.tech}
 
