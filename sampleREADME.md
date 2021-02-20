@@ -1,11 +1,10 @@
-# Good README Generator
+# Team Profile Generator
 
   ## Table of Contents
 
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
   * [Technologies Used](#technologies)
   * [Tests](#tests)
   * [Credits](#credits)
@@ -15,7 +14,7 @@
 
   ## Description
 
-  This is a README generator using Node.js. The user enters through the command line and, after drilling down into the containing folder, initializes the application by entering "node index.js". They are then taken through a series of prompts eliciting the necessary information about their project, which the generator then synthesizes into a README.md file.
+  This is a CLI application using Node.js that generates an html file containing names, roles, IDs, email addresses, an office number (for managers), GitHub account link (for engineers), and school (for interns.)
 
   ## Installation Instructions
 
@@ -23,9 +22,9 @@
 
   ## Usage
 
-  This project generates README.md files.
+  This project is intended to be used to generate a roster-page for a team of developers that includes a manager, any number of engineers, and any number of interns.
 
-  ## Technologies used
+  ## Technologies Used
 
   Node.js
 
