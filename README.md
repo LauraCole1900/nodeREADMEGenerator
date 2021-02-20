@@ -32,7 +32,7 @@ SSH:
 $ git clone git@github.com:LauraCole1900/nodeREADMEGenerator.git
 ```
 
-Then start the application by typing into the command line
+Then cd/ into the cloned directory and start the application by typing into the command line
 ```
 $ node index.js
 ```
