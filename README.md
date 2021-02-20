@@ -55,7 +55,7 @@ N/A
 
 ## Contributing
 
-N/A
+We believe code is never finished, welcome your contributions to enhance the applications functionality. Please adhere to the Code of Conduct for the Contributor Covenant, version 2.0, at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
 
 ## Questions
 
