@@ -3,9 +3,10 @@
 ## Table of Contents
 
 * [Description](#description)
-* [Installation](#installation)
+* [Links](#links)
+* [Installation Instructions](#installation-instructions)
 * [Usage](#usage)
-* [Technologies Used](#technologies)
+* [Technologies Used](#technologies-used)
 * [Tests](#tests)
 * [Credits](#credits)
 * [Contributing](#contributing)
@@ -15,6 +16,8 @@
 ## Description
 
 This is a README generator using Node.js. The user enters through the terminal and first drills down into the containing folder, then enters "node index.js" into the command line. They are then taken through a series of prompts eliciting the necessary information about their project, which the generator then synthesizes into a README.md file.
+
+## Links
 
 [Link to walkthrough video](https://drive.google.com/file/d/1jXcjlIjijSWIJh8DP3Gx3CC52V9RL2UR/view)
 
