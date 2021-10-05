@@ -46,7 +46,7 @@ This project generates README.md files.
 
 ## Technologies Used
 
-Node.js, Inquirer
+[![Node.js](https://img.shields.io/badge/built%20with-Node.js-3c873a)](https://nodejs.org/en/) [![Inquirer.js](https://img.shields.io/badge/built%20with-Inquirer.js-68a063)](https://www.npmjs.com/package/inquirer)
 
 ## Tests
 
