@@ -1,5 +1,5 @@
 {
-  "name": "readme-pack",
+  "name": "readme-generator",
   "version": "1.0.0",
   "description": "README generator using Node.js and ES6+",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/LauraCole1900/nodeREADMEGenerator.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/LauraCole1900/nodeREADMEGenerator/issues"
   },
